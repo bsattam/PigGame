@@ -1,0 +1,146 @@
+body{
+  background-image: url(green.jpg);
+  background-size: cover;
+}
+
+.heading{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 80px;
+  text-align:center;
+  color: white;
+  margin: 40px 0;
+  text-shadow: 5px 2px black;
+  /* background-color: #ffaca6; */
+  border-radius: 25px;
+  border-color: red;
+  border-width: medium;
+  border-style: solid;
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 5px 5px #567fa8;
+  width: 75%;
+  margin-left: 12%;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+  height: 500px;
+  color: white;
+}
+
+.container-border{
+  border-width: medium;
+  border-style: solid;
+  border-color: red;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  box-shadow: 5px 5px #567fa8;
+}
+
+.players{
+  width: 35%;
+
+}
+.middle{
+  width: 18%;
+  /* background-color: yellow; */
+}
+
+.name{
+  margin: 40px 20%;
+  /* background-color: white; */
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  border-style: dotted;
+  border-width: medium;
+  border-color: white;
+  padding: 10px 20px;
+}
+
+.total{
+  padding: 5%;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.total-score{
+  font-size: 5rem;
+}
+
+.current{
+  padding: 10% 5% 5%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.current-score{
+  font-size: 3rem;
+}
+
+.new-game{
+  margin: 50px 15px;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.dice-box{
+  height: 120px;
+}
+.dice-image{
+  width: 120px;
+  height: 120px;
+  margin-left: 50px;
+}
+
+.roll-dice{
+  display: flex;
+  margin: 70px 7% 0;
+}
+.middle-items-border{
+  border-radius: 5px;
+  border-width: medium;
+  border-color: red;
+  border-style: solid;
+  box-shadow: 2px 2px #780000;
+  background-color: rgba(255,255,255,0.3);
+}
+.roll-icon{
+background-image: url(roll.png);
+width: 50px;
+height: 50px;
+background-size: cover;
+}
+.roll-text{
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 6% 0 0 7px;
+}
+.hold{
+  display: flex;
+  margin: 20px 7% 0;
+}
+.hold-icon{
+  background-image: url(hold.png);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.hold-text{
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 6% 15%;
+}
+
+.button:hover{
+  background-color: rgba(255,255,255,0.6);
+}
+
+.active{
+  background-color: rgba(32, 128, 70, 0.5);
+  border-color: rgb(0, 255, 101);
+}
