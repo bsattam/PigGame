@@ -1,6 +1,6 @@
 var scores, roundscores, activePlayer, dice, roundscore, gameplay, target;
 
-target = 10;
+target = 100;
 
 function initialize() {
 scores = [0,0];
