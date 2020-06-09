@@ -1,6 +1,6 @@
 var scores, roundscores, activePlayer, dice, roundscore, gameplay, target;
 
-target = 100;
+target = 10;
 
 function initialize() {
 scores = [0,0];
@@ -34,6 +34,7 @@ function swapPlayer() {
 function winner() {
   document.querySelector('.dice-image').style.display = 'none';
   document.querySelector('.name-' + activePlayer).textContent = 'WINNER!';
+  document.querySelector('.current-score-'+ activePlayer).textContent = 0;
   gameplay = false;
 }
 
@@ -54,6 +55,7 @@ document.querySelector('.roll-dice').addEventListener('click', function(){
 })
 
 document.querySelector('.hold').addEventListener('click', function(){
+  if (gameplay){
   scores[activePlayer] += roundscore;
   document.querySelector('.total-score-' + activePlayer).textContent = scores[activePlayer];
   if (document.querySelector('.total-score-' + activePlayer).textContent >= target){
@@ -62,6 +64,7 @@ document.querySelector('.hold').addEventListener('click', function(){
   else{
     swapPlayer();
   }
+}
 })
 
 document.querySelector('.new-game').addEventListener('click', function(){
