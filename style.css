@@ -82,25 +82,44 @@ body{
 }
 
 .new-game{
-  margin: 50px 15px;
+  margin: 50px 15px 10px;
   font-size: 1.4rem;
   text-align: center;
   padding: 10px;
+}
+
+.target-score{
+  height: 20px;
+  margin: 10px 20px 30px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+.target-score: focus{
+  outline: none;
 }
 
 .dice-box{
   width: 80%;
   height: 120px;
   margin: 0 18%;
+  display: flex;
 }
 .dice-image{
-  width: 80%;
+  width: 40%;
   object-fit: cover;
+  align-self: flex-start;
+}
+
+.dice-image-1{
+  width: 40%;
+  object-fit: cover;
+  align-self: flex-end;
 }
 
 .roll-dice{
   display: flex;
-  margin: 70px 7% 0;
+  margin: 40px 7% 0;
 }
 .middle-items-border{
   border-radius: 5px;
